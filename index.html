@@ -1,0 +1,226 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ClauXDgs | Mi Universo Gamer</title>
+
+    <meta name="description"
+        content="Bienvenidos al universo gamer de ClauXDgs. Sígueme en mis redes y juega conmigo.">
+
+    <link rel="icon" href="fotos/Insignia neón de Clauxdgs con chica gatuna.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <div class="bg"></div>
+    <div class="particles"></div>
+
+    <main class="container">
+
+        <!-- PERFIL -->
+
+        <div class="profile-area">
+
+            <img src="fotos/Insignia neón de Clauxdgs con chica gatuna.png"
+                alt="Mi personaje"
+                class="profile-pic">
+
+            <h1>ClauXDgs</h1>
+
+            <p class="bio">
+                ✨ Gamer • Streamer • Content Creator ✨
+                <br>
+                Bienvenidos a mi universo 💜
+            </p>
+
+        </div>
+
+        <!-- REDES -->
+
+        <section>
+
+            <h2>🌐 ENCUÉNTRAME EN MIS REDES</h2>
+
+            <div class="links">
+
+                <a href="https://www.instagram.com/clauxdgs_gaming/"
+                    target="_blank" rel="noopener noreferrer"
+                    class="btn instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                    Instagram
+                </a>
+
+                <a href="https://www.tiktok.com/@clauxdgs"
+                    target="_blank" rel="noopener noreferrer"
+                    class="btn tiktok">
+                    <i class="fa-brands fa-tiktok"></i>
+                    TikTok
+                </a>
+
+                <a href="https://www.youtube.com/@clauxdgs"
+                    target="_blank" rel="noopener noreferrer"
+                    class="btn youtube">
+                    <i class="fa-brands fa-youtube"></i>
+                    YouTube
+                </a>
+
+                <a href="https://www.twitch.tv/clauxdgs"
+                    target="_blank" rel="noopener noreferrer"
+                    class="btn twitch">
+                    <i class="fa-brands fa-twitch"></i>
+                    Twitch
+                </a>
+                <a href="https://kick.com/clauxdgs"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn kick">
+
+                        <i class="fa-brands fa-kickstarter"></i>
+                        Kick
+
+                    </a>
+
+            </div>
+
+        </section>
+
+        <!-- FORTNITE -->
+
+        <section class="gaming-section">
+
+            <h2>🎮 MI UNIVERSO GAMER</h2>
+
+            <div class="creator-code">
+
+                <p>MI CÓDIGO DE CREADORA FORTNITE</p>
+
+                <h3>CLAUXDGS</h3>
+
+                <button class="copy-btn"
+                    onclick="copyCode()">
+                    <i class="fa-regular fa-copy"></i>
+                    COPIAR CÓDIGO
+                </button>
+
+                <p class="code-message" id="codeMessage"></p>
+
+            </div>
+
+            <div class="game-profile">
+
+                <img src="fotos/Nana mode activada.png" alt="Nana Mobile Legends">
+
+                <div class="creator-code">
+
+                <p>MI ID de Mobile legends</p>
+
+                <h3>2128278960</h3>
+
+                <button class="copy-btn"
+                    onclick="copyID()">
+                    <i class="fa-regular fa-copy"></i>
+                    COPIAR ID
+                </button>
+
+                <p class="code-message2" id="codeMessage2"></p>
+
+            </div>
+
+
+            </div>
+
+            <div class="game-profile">
+
+                <div>
+                    <h3>FORTNITE</h3>
+                    <p>¡Nos vemos en la partida!</p>
+                    <p class="username">Usuario: CLAUXDGSS o CLAUXDGS2</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- APOYO -->
+
+        <section class="support-section">
+
+            <h2>💜 APOYA MI CONTENIDO</h2>
+
+            <p>
+                Gracias por acompañarme en esta aventura.
+                Tu apoyo me ayuda a seguir creando contenido.
+            </p>
+
+            <a href="https://www.paypal.com/paypalme/clauxdgs"
+                target="_blank" rel="noopener noreferrer"
+                class="btn paypal">
+
+                <i class="fa-brands fa-paypal"></i>
+                APOYAR POR PAYPAL
+
+            </a>
+
+            <div class="payment-qr">
+
+                <h3>🇧🇴 APOYO DESDE BOLIVIA</h3>
+
+                <img src="fotos/qr.png"
+                    alt="QR de pagos Bolivia">
+
+                <p>Escanea el código para apoyarme 💜</p>
+
+            </div>
+
+        </section>
+
+        <footer>
+            Hecho con 💖 por ClauXDgs
+            <br>
+            Nos vemos en la próxima partida ✨
+        </footer>
+
+    </main>
+
+    <script>
+        function copyCode() {
+            navigator.clipboard.writeText("CLAUXDGS")
+                .then(() => {
+                    document.getElementById("codeMessage").textContent =
+                        "¡Código copiado! Gracias por apoyarme 💜";
+                })
+                .catch(() => {
+                    document.getElementById("codeMessage").textContent =
+                        "No se pudo copiar. Escribe CLAUXDGS manualmente.";
+                });
+        }
+              function copyID() {
+            navigator.clipboard.writeText("2128278960")
+                .then(() => {
+                    document.getElementById("codeMessage2").textContent =
+                        "¡ID copiado! Agregame y te acepto (si tengo espacio XD) si vienes frecuentemente a mis lives si te aceptaré";
+                })
+                .catch(() => {
+                    document.getElementById("codeMessage2").textContent =
+                        "No se pudo copiar. Escribe 2128278960 manualmente.";
+                });
+        }
+    </script>
+
+</body>
+</html>
